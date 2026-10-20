@@ -1,0 +1,73 @@
+name: hadooyy
+description: Hadooyy WH40K Blood Red Abstract
+
+colors:
+  background: "#080808"
+  ui_accent: "#ff2200"
+  banner_accent: "#ff2200"
+  banner_title: "#ff2200"
+  banner_text: "#f5f0f0"
+  ui_text: "#f5f0f0"
+  ui_label: "#ccbbbb"
+  banner_dim: "#aaaaaa"
+  banner_border: "#ff2200"
+  ui_border: "#dd0000"
+  ui_ok: "#00e676"
+  ui_warn: "#ffd600"
+  ui_error: "#ff2200"
+  prompt: "#ff2200"
+  input_rule: "#dd0000"
+  response_border: "#ff2200"
+  status_bar_bg: "#0d0000"
+  status_bar_text: "#f5f0f0"
+  status_bar_strong: "#ff2200"
+  status_bar_dim: "#aaaaaa"
+  status_bar_good: "#00e676"
+  status_bar_warn: "#ffd600"
+  status_bar_bad: "#ff6600"
+  status_bar_critical: "#ff2200"
+  session_label: "#ff2200"
+  session_border: "#dd0000"
+  shell_dollar: "#ff2200"
+  completion_menu_bg: "#0d0000"
+  completion_menu_current_bg: "#250000"
+  selection_bg: "#330000"
+
+banner_logo: |
+  [bold #ff2200]██╗  ██╗ █████╗ ██████╗  ██████╗  ██████╗ ██╗   ██╗██╗   ██╗[/]
+  [bold #ff3311]██║  ██║██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗╚██╗ ██╔╝╚██╗ ██╔╝[/]
+  [#ff4422]███████║███████║██║  ██║██║   ██║██║   ██║ ╚████╔╝  ╚████╔╝ [/]
+  [#ff2200]██╔══██║██╔══██║██║  ██║██║   ██║██║   ██║  ╚██╔╝    ╚██╔╝  [/]
+  [#dd1100]██║  ██║██║  ██║██████╔╝╚██████╔╝╚██████╔╝   ██║      ██║   [/]
+  [#aa0000]╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝    ╚═╝      ╚═╝   [/]
+
+banner_hero: |
+  [#ff2200]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#ff2200]⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#ff3311]⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⡿⠉⢿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀[/]
+  [#ff3311]⠀⠀⠀⠀⢀⣴⣿⣿⠟⠁⠀⠀⠈⠻⣿⣿⣦⡀⠀⠀⠀⠀[/]
+  [#ff4422]⠀⠀⢀⣴⣿⣿⠟⠁⠀⠀⠀⢰⡆⠀⠀⠀⠈⠻⣿⣿⣦⡀⠀⠀[/]
+  [#ff4422]⠀⠀⣿⣿⣿⡇⠀⠀⠀⠀⣰⣿⣿⣆⠀⠀⠀⠀⢸⣿⣿⣿⠀⠀[/]
+  [#ff2200]⠀⠀⠻⣿⣿⣷⣄⠀⠀⣰⣿⣿⣿⣿⣆⠀⠀⣠⣾⣿⣿⠟⠀⠀[/]
+  [#ff2200]⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀[/]
+  [#dd1100]⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀[/]
+  [#dd1100]⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#aa0000]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [#aa0000]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[/]
+  [dim #ff2200]⠀⠀⠀⠀⠀⠀⠀⠀t h e   v o i d⠀⠀⠀⠀⠀⠀⠀⠀[/]
+
+branding:
+  agent_name: Hadooyy-CLI
+  welcome: "[ OMNISSIAH ONLINE ] Ketik pesanmu atau /help."
+  goodbye: "BLOOD FOR THE BLOOD GOD. 💀"
+  response_label: " ☠ Hadooyy "
+  prompt_symbol: "☠"
+  help_header: "(☠) Commands"
+
+tool_prefix: "│"
+
+spinner:
+  wings:
+    - ["☩", "☩"]
+    - ["†", "†"]
+    - ["⸸", "⸸"]

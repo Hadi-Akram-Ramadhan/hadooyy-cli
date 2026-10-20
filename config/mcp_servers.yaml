@@ -1,0 +1,16 @@
+# MCP Server configurations for Hermes Agent
+
+mcp_servers:
+  rea:
+    command: npx
+    args:
+      - -y
+      - rea-agents@latest
+      - --mcp
+    connect_timeout: 90
+    timeout: 180
+  agent_reach:
+    command: python
+    args:
+      - -m
+      - agent_reach.integrations.mcp_server
