@@ -1,5 +1,5 @@
 ---
-name: remotion-video
+name: remotion-video-production
 description: Create programmatic React videos with Remotion.
 version: 0.4.0
 author: Hadi (kkhad), Hermes Agent

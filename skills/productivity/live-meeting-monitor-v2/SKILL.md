@@ -1,5 +1,5 @@
 ---
-name: live-meeting-monitor
+name: live-meeting-monitor-v2
 description: "Use when monitoring live meetings. Capture screen/audio."
 version: 1.2.0
 author: Hermes Agent
