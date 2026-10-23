@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "rea": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rea-agents@6.7.0",
+        "--mcp"
+      ]
+    },
+    "agent-reach": {
+      "type": "stdio",
+      "command": "VENV_PYTHON",
+      "args": [
+        "-m",
+        "agent_reach.integrations.mcp_server"
+      ]
+    },
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "headroom": {
+      "type": "stdio",
+      "command": "headroom",
+      "args": [
+        "mcp",
+        "serve"
+      ]
+    }
+  }
+}

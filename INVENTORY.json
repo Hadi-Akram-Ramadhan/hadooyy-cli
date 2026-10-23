@@ -1,0 +1,192 @@
+{
+  "total_skills": 143,
+  "categories_count": 16,
+  "categories": {
+    "antislop": [
+      "antislop",
+      "antislop-code",
+      "antislop-copywriting",
+      "antislop-human",
+      "antislop-layoutmobile",
+      "antislop-ui"
+    ],
+    "apple": [
+      "apple-notes",
+      "apple-reminders",
+      "findmy",
+      "imessage"
+    ],
+    "autonomous-ai-agents": [
+      "claude-code",
+      "codex",
+      "computer-use",
+      "hermes-agent",
+      "opencode"
+    ],
+    "claude-code": [
+      "9router",
+      "9router-chat",
+      "9router-embeddings",
+      "9router-image",
+      "9router-stt",
+      "9router-tts",
+      "9router-video",
+      "9router-web-fetch",
+      "9router-web-search",
+      "agentic-debate",
+      "api-design",
+      "api-security-testing",
+      "application-security-testing",
+      "backend-patterns",
+      "banner-design",
+      "benchmark-optimization-loop",
+      "bolt-slides",
+      "brand",
+      "ci-security-scanning-with-strix",
+      "content-hash-cache-pattern",
+      "debate",
+      "deployment-patterns",
+      "design-system",
+      "docker-patterns",
+      "e2e-testing",
+      "find-security-vulnerabilities-in-code",
+      "fix-security-vulnerabilities-with-strix",
+      "graphify",
+      "hexagonal-architecture",
+      "logo-design",
+      "managed-pentesting-with-strix",
+      "mysql-patterns",
+      "owasp-top-10-testing",
+      "parallel-execution-optimizer",
+      "penetration-testing-with-strix",
+      "playwright-cli",
+      "postgres-patterns",
+      "react-patterns",
+      "react-performance",
+      "react-testing",
+      "redis-patterns",
+      "rtk",
+      "tdd-workflow",
+      "ui-styling",
+      "ui-ux-pro-max",
+      "web-app-penetration-testing"
+    ],
+    "creative": [
+      "2d-character-animation",
+      "architecture-diagram",
+      "ascii-video",
+      "baoyu-infographic",
+      "claude-design",
+      "design-md",
+      "directing-stickman-videos",
+      "humanizer",
+      "hyperframes",
+      "manim-video",
+      "narration-animation-pipeline",
+      "p5js",
+      "popular-web-designs",
+      "remotion-video",
+      "remotion-video-production",
+      "songwriting-and-ai-music"
+    ],
+    "devops": [
+      "sdlc-review"
+    ],
+    "email": [
+      "email-inbox-triage",
+      "himalaya"
+    ],
+    "frontend": [
+      "apple-design",
+      "awwwards",
+      "emil-design-eng",
+      "frontend-design",
+      "jury",
+      "review-animations",
+      "shadcn",
+      "vercel-composition-patterns",
+      "vercel-react-best-practices",
+      "web-design-guidelines"
+    ],
+    "media": [
+      "gif-search",
+      "songsee",
+      "youtube-content"
+    ],
+    "note-taking": [
+      "obsidian"
+    ],
+    "productivity": [
+      "academic-document-styling",
+      "airtable",
+      "box",
+      "document-to-action-items",
+      "docx",
+      "google-workspace",
+      "hackathon-pitch-prep",
+      "live-meeting-monitor",
+      "live-meeting-monitor-v2",
+      "maps",
+      "meeting-action-items",
+      "messaging-recurring-reminders",
+      "notion",
+      "pdf",
+      "powerpoint",
+      "product-price-monitor",
+      "teams-meeting-pipeline",
+      "weekly-review-planning",
+      "xlsx"
+    ],
+    "research": [
+      "agent-reach",
+      "arxiv",
+      "competitor-news-monitor",
+      "grounded-citations",
+      "llm-wiki"
+    ],
+    "reverse-engineering": [
+      "rea-analysis-optimization",
+      "rea-changelog-update",
+      "rea-ci-tests-audit",
+      "rea-tool-design",
+      "reverse-engineer-anything"
+    ],
+    "social-media": [
+      "xurl"
+    ],
+    "software-development": [
+      "agent-environment-portability",
+      "chrome-extension-engineering",
+      "codebase-inspection",
+      "django-nextjs-monorepo",
+      "dogfood",
+      "github",
+      "hermes-agent-skill-authoring",
+      "inspecting-hermes-desktop-dom",
+      "install-external-skills",
+      "node-inspect-debugger",
+      "python-debugpy",
+      "requesting-code-review",
+      "scratch-engineering",
+      "scratch-project-engineering",
+      "simplify-code",
+      "spike",
+      "systematic-debugging",
+      "test-driven-development"
+    ],
+    "web": [
+      "blocked-page-recovery"
+    ]
+  },
+  "plugins": [
+    "antislop",
+    "gopls-lsp"
+  ],
+  "mcp_servers": [
+    "rea",
+    "agent-reach",
+    "exa",
+    "headroom"
+  ],
+  "theme": "hadooyy.yaml"
+}

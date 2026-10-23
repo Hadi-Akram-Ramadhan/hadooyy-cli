@@ -39,4 +39,29 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 
 **IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
 
+## Elevating Existing Designs to Award-Caliber (Anti-Timid Improvement)
+
+When tasked with improving or elevating an existing project to award-winning / Awwwards caliber:
+
+1. **Preserve the Core Concept & Theme (Never Flatten Identity)**:
+   - If the project already has an established thematic territory (e.g., Industrial, Warhammer 40K, Cyber-Retro, Brutalist, Gothic Sci-Fi), NEVER replace it with generic minimalist tech or default SaaS aesthetics.
+   - Elevate THAT specific concept: intensify atmospheric depth, enhance industrial/thematic details (chamfers, rivets, specular brass/metal sheen, live telemetry ribbons), and apply high-caliber typography scale and kinetic rune decoding.
+
+2. **Break Repetitive Cookie-Cutter Grids (Anti-Slop R-14 & R-05)**:
+   - Do not settle for micro-polish on a repetitive 2x2 or 3x3 grid of identical cards.
+   - Restructure into an **Asymmetric Feature Showcase**: a commanding full-width flagship hero spotlight with an interactive viewfinder HUD, live status telemetry, and deep architecture readouts, followed by an asymmetrical editorial archive.
+   - Provide interactive category filters with mechanical sound feedback.
+
+3. **Convert Static Information into Interactive Cyber-Matrices / Command Bridges**:
+   - Turn passive lists or dot rows into dual-panel interactive matrices:
+     - Left: tactical module selection with segmented phosphor energy meters.
+     - Right: a sticky live diagnostic telemetry console that dynamically decodes and inspects hovered items (efficiency ratings, architecture roles, concurrency load benchmarks).
+
+4. **Visual Audio Synchronicity**:
+   - When Web Audio API procedural synthesis or sound effects are present, couple them with visual frequency oscilloscopes (animated equalizer bars) so sound state is immediately perceptible and interactive. Persist mute state in storage.
+
+5. **Emil Kowalski Tactile Physics**:
+   - Ensure every button, chip, and card provides tactile press feedback (`active:scale-[0.97]`).
+   - Use custom cubic-bezier curves (`cubic-bezier(0.23, 1, 0.32, 1)`) and support Escape key dismissals on all modal viewports.
+
 Remember: Claude is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.

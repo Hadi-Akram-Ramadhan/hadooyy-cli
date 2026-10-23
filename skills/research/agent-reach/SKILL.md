@@ -1,24 +1,6 @@
 ---
 name: agent-reach
-description: >
-  MUST USE when user wants to 调研/research/搜索/search/查/找/look up anything
-  on the internet — e.g. 全网调研 X / 帮我调研一下 X / 查一下 X / 搜搜 X /
-  看看大家怎么评价 X / X 上有什么讨论 / research this topic。
-
-  Also MUST USE when user mentions any platform or shares any URL/链接:
-  小红书/xiaohongshu/xhs, Twitter/推特/X, B站/bilibili, Reddit, Facebook,
-  Instagram, V2EX, LinkedIn/领英/Boss直聘/招聘/求职/jobs, YouTube, GitHub code search, 小宇宙播客,
-  雪球/股票行情, RSS feeds, or any web URL.
-
-  16 platforms, multi-backend routing (OpenCLI / per-platform CLIs / APIs).
-  Zero config for 6 channels. Run `agent-reach doctor --json` to see which
-  backend serves each platform right now.
-
-  NOT for: 写报告/数据分析/翻译等内容加工（本 skill 只负责从互联网获取内容）；
-  发帖/评论/点赞等写操作；已有专门 skill 的平台（先用专门 skill）。
-
-  【路由方式】SKILL.md 包含路由表和常用命令，复杂场景需按需阅读对应分类的 references/*.md。
-  分类：search / social (小红书/推特/B站/V2EX/Reddit/Facebook/Instagram) / career(LinkedIn/Boss直聘) / dev(github) / web(网页/文章/RSS) / video(YouTube/B站/播客) / finance(雪球/股票)。
+description: "Use when searching or researching across 16 web platforms."
 metadata:
   homepage: https://github.com/Panniantong/Agent-Reach
 ---
@@ -26,6 +8,12 @@ metadata:
 # Agent Reach — 互联网能力路由器
 
 16 平台、多后端。**本 skill 存在时必须用它访问这些平台，不要自己发明方案。**
+
+## 触发场景
+
+全网调研 X / 帮我调研一下 X / 查一下 X / 搜搜 X / 看看大家怎么评价 X / X 上有什么讨论 / research this topic。
+或提及特定平台与链接：小红书/xhs, Twitter/X, B站/bilibili, Reddit, Facebook, Instagram, V2EX, LinkedIn, Boss直聘, YouTube, GitHub, 小宇宙, 雪球, RSS。
+NOT for: 写报告/数据分析/翻译等加工；发帖/评论/点赞等写操作；已有专门 skill 的平台。
 
 ## 常驻规则（全程适用）
 
@@ -163,3 +151,17 @@ agent-reach doctor --json
 https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md
 
 用户只需提供 cookies，其他配置由 agent 完成。
+
+## MCP 接入须知
+
+1. **版本与安装**：早期 PyPI 版本的 `agent-reach`（如 v0.1.0）没有 `agent_reach.integrations.mcp_server` 模块。必须直接安装/升级主分支：
+   ```bash
+   pip install --upgrade "agent-reach[mcp] @ https://github.com/Panniantong/agent-reach/archive/main.zip"
+   ```
+2. **Claude Code 接入**：Claude Code 的 MCP 配置保存在 `~/.claude.json`（或项目 `.mcp.json`），写在 `~/.claude/settings.json` 会被静默忽略。使用 CLI 注册：
+   ```bash
+   claude mcp add --scope user agent-reach <python_path> -- -m agent_reach.integrations.mcp_server
+   ```
+3. **多 Python / Windows 解释器陷阱**：若系统中有多个 Python 或 Agent 运行在隔离虚拟环境中，裸 `python` 可能解析到未安装 `agent-reach` 的环境并导致 `CONNECTION_CLOSED` / `ModuleNotFoundError`。注册 stdio MCP 时显式指定安装了该包的具体 Python 路径（如 `C:\Users\<user>\AppData\Local\Microsoft\WindowsApps\python.exe` 或 `python3.12`）。
+4. **Windows CLI PATH 补丁**：Windows 下 user-level pip 安装将 `agent-reach.exe` 放置于 `LocalCache\local-packages\Python<ver>\Scripts\`，默认常不在 MSYS/Git-Bash PATH 内。若 `which agent-reach` 报错，将其复制或软链至已有 PATH 目录（如 `~/.hermes/bin/`）。
+5. **功能范围**：该 MCP 服务仅暴露 `get_status`（返回 doctor report 快照）；实际各平台内容检索与抓取仍然走对应 CLI 工具（OpenCLI, yt-dlp, mcporter 等）。

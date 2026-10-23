@@ -3,3 +3,13 @@ __pycache__/
 .DS_Store
 Thumbs.db
 node_modules/
+.in_use/
+.env
+.env.*
+!.env.example
+auth.json
+credentials.json
+*.bak-*
+*.db
+*.sqlite*
+setup.local.json

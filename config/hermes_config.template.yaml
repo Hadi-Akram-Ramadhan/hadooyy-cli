@@ -1,0 +1,21 @@
+# Portable non-secret preferences. Merge via hermes config set; never replace live config.
+agent:
+  max_turns: 150
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+delegation:
+  max_iterations: 250
+  max_concurrent_children: 10
+display:
+  interface: cli
+  compact: false
+  show_reasoning: true
+  reasoning_style: code
+  tool_progress: all
+  friendly_tool_labels: true
+  interim_assistant_messages: true
+  inline_diffs: true
+  file_mutation_verifier: true
+  streaming: true
